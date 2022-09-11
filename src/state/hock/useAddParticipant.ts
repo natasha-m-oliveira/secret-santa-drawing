@@ -8,6 +8,9 @@ export const useAddParticipant = () => {
   return (participantName: string) => {
     if (list.includes(participantName)) {
       setError('O participante já foi adicionado a lista.');
+      setTimeout(() => {
+        setError('');
+      }, 3000);
       return;
     }
     return setList((currentList) => [...currentList, participantName]);
