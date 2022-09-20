@@ -15,6 +15,9 @@ export const PrizeDraw = () => {
     event.preventDefault();
     if (result.has(participant)) {
       setSecretSantaDrawing(result.get(participant)!);
+      setTimeout(() => {
+        setSecretSantaDrawing('');
+      }, 1000 * 5) // 5 segundos
     }
   };
 
