@@ -1,6 +1,6 @@
 import { act, fireEvent, render, screen } from '@testing-library/react';
 import { RecoilRoot } from 'recoil';
-import { Form } from './Form';
+import { Form } from './';
 
 describe('the behavior of the form.tsx', () => {
   test('when the entry is empty, new participants cannot be added', () => {
